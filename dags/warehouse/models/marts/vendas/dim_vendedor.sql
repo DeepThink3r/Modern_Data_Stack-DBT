@@ -1,0 +1,1 @@
+select * from {{ref('stg_aw__sales_person')}}

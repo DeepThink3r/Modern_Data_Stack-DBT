@@ -1,0 +1,1 @@
+select * from {{ref('int_sales_joined_header_detail_offer')}}

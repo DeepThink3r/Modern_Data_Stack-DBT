@@ -1,0 +1,12 @@
+warehouse:
+  outputs:
+    dev:
+      dbname: adventureworks
+      host: localhost
+      password: "{{ env_var('DBT_ENV_CUSTOM_ENV_SENHA') }}"
+      port: 5431
+      schema: airbyte
+      threads: 1
+      type: postgres
+      user: gabriel
+  target: dev

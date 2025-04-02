@@ -1,0 +1,21 @@
+
+version: 2
+
+sources:
+    - name: sources
+      database: adventureworks
+      schema: airbyte
+      tables:
+        - name: Customer
+        - name: Person
+        - name: Product
+        - name: ProductCategory
+        - name: ProductModel
+        - name: ProductSubcategory
+        - name: SalesOrderDetail
+        - name: SalesOrderHeader
+        - name: SalesPerson
+        - name: SalesTerritory
+        - name: SpecialOffer
+        - name: Store
+
