@@ -27,24 +27,28 @@ Esse é apenas o início de uma jornada de estudo orientado à projetos. Bem vin
 
 # Tecnologias Utilizadas 
  \
- \
+ 
 * Docker
 * Sql Server
 * Airbyte
 * Postgres
 * DBT
 * Airflow
-
+ \
 
 # Configurando a Arquitetura
-
+ \
+ 
 Antes de começar a configurar, é necessário que tenhamos o docker instalado em nossas máquinas. Segue abaixo o guia de instalação do docker de acordo com o seu sistema operacional(OS): \
-
+ \
+ 
 ## Docker
 https://docs.docker.com/engine/install/
-
+ \
+ 
 ## Subindo os Bancos de Dados
-
+ \
+ 
 Para subir a imagem mssql no docker, segui as orientações da própria Microsoft. A escolha desse RDBMS foi devido a fácilidade popular os dados utilizando os arquivos .bak da AdventureWorks. Eu escolhi subir a imagem diretamente via terminal com os seguintes comandos abaixo: \
 
 ``docker run -d --name mssql_awdb --hostname awdb -p 1433:1433 \ 
