@@ -34,7 +34,7 @@ Esse é apenas o início de uma jornada de estudo orientado à projetos. Bem vin
 * Postgres
 * DBT
 * Airflow
-/
+\
 
 # Configurando a Arquitetura
 \
