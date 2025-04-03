@@ -1,7 +1,7 @@
 # Utilizando DBT como o T do ETL
 
 * [Descrição do Projeto](#descrição-do-projeto)
-* [Tecnologias Utilizadas]
+* [Tecnologias Utilizadas] (#tecnologias-utilizadas)
 * [Configurando a arquitetura]
 * * [Banco de Dados]
   * [Airbyte]
