@@ -25,9 +25,9 @@ Esse é apenas o início de uma jornada de estudo orientado à projetos. Bem vin
 ![image](https://github.com/user-attachments/assets/c47e439c-68db-44f3-9828-60e08eecea88)
 
 
-# Tecnologias Utilizadas \
-
-
+# Tecnologias Utilizadas 
+ \
+ \
 * Docker
 * Sql Server
 * Airbyte
