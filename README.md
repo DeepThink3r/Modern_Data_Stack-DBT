@@ -68,7 +68,9 @@ ALTER LOGIN sa DISABLE;
 \
 ⭐ o `-C` no final serve para instruir o sqlcmd a confiar no certificado autoassinado do servidor.
 \
-Uma vez que o MSSQL já está configurado, vamos para o postgres que não é muito diferente: \
+Uma vez que o MSSQL já está configurado, vamos para o postgres que não é muito diferente:
+\
+
 ```sql
 docker run -d \
 --name pg_awdb \
