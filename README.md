@@ -52,9 +52,11 @@ docker run -d --name mssql_awdb --hostname awdb -p 1433:1433 \
   -e "MSSQL_SA_PASSWORD=sqlserver" \
   -v mssql-db:/var/lib/mssql
 ```
-Feito isso, o comando `docker build -t <nome_da_imagem> .` deve ser executado no terminal para criar o container do MSSQL.
+Feito isso, o comando `docker build -t <nome_da_imagem> .` deve ser executado no terminal para criar o container do MSSQL. \
 
-⭐ Detalhe importate: Para fins de isolamento, é importante a criação de redes dentro do docker para que os containers se comuniquem dentro dessa rede recém criada. Por que? Caso você suba duas soluções que usam o mesmo banco de dados, evitará com que dê concorrência por causa da porta, ou seja, se um há dois bancos postgres na mesma rede, um deles ficará inativo. A rede pode ser criada no momento da criação da imagem, ou criada préviamente apenas com o comando `docker network create <nome_da_rede>`.
+
+⭐ Detalhe importate: Para fins de isolamento, é importante a criação de redes dentro do docker para que os containers se comuniquem dentro dessa rede recém criada. Por que? Caso você suba duas soluções que usam o mesmo banco de dados, evitará com que dê concorrência por causa da porta, ou seja, se um há dois bancos postgres na mesma rede, um deles ficará inativo. A rede pode ser criada no momento da criação da imagem, ou criada préviamente apenas com o comando `docker network create <nome_da_rede>`.\
+
 
 Como boa prática da microsoft, é recomendado criar um usuário novo e desabilitar o usuário padrão administrador. Para isso, execute o comando `docker exec -it <id_do_container> bash` para acessar o terminal do container do MSSQL e, em seguida, execute o seguinte comando `/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P "senha" -C` para acessar o banco de dados. Uma vez no banco, crie o seu usuário e, em seguida, desabilite o usuário sa:
 
@@ -65,6 +67,8 @@ ALTER SERVER ROLE sysadmin ADD MEMBER `user`;
 
 ALTER LOGIN sa DISABLE;
 ```
+\
+⭐ o `-C` no final serve para instruir o sqlcmd a confiar no certificado autoassinado do servidor.
 
 
 
