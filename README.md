@@ -51,3 +51,15 @@ docker run -d --name mssql_awdb --hostname awdb -p 1433:1433 \
   -e "ACCEPT_EULA=Y" \
   -e "MSSQL_SA_PASSWORD=sqlserver" \
   -v mssql-db:/var/lib/mssql
+```
+Feito isso, o comando `docker build -t <nome_da_imagem> .` deve ser executado no terminal.
+
+Como boa prática da microsoft, é recomendado criar um usuário novo e desabilitar o usuário padrão administrador:
+
+```sql
+CREATE LOGIN `<user`> WITH PASSWORD = `'<senha>'`;
+
+ALTER SERVER ROLE sysadmin ADD MEMBER `user`;
+```
+
+
