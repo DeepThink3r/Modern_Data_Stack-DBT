@@ -1,8 +1,8 @@
 # Utilizando DBT como o T do ETL
 
 * [Descrição do Projeto](#descrição-do-projeto)
-* [Tecnologias Utilizadas] (#tecnologias-utilizadas)
-* [Configurando a arquitetura]
+* [Tecnologias Utilizadas](#tecnologias-utilizadas)
+* [Configurando a Arquitetura](#configurando-a-arquitetura)
 * * [Banco de Dados]
   * [Airbyte]
   * [Schemas]
@@ -22,6 +22,7 @@ Mesmo com o íntuito do estudo ser voltado para o DBT, maior parte do tempo foi 
 Esse é apenas o início de uma jornada de estudo orientado à projetos. Bem vindo ao meu primeiro projeto no github!
 
 
+
 # Tecnologias Utilizadas
 
 * Docker
@@ -30,3 +31,6 @@ Esse é apenas o início de uma jornada de estudo orientado à projetos. Bem vin
 * Postgres
 * DBT
 * Airflow
+
+
+# Configurando a Arquitetura
