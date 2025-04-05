@@ -20,7 +20,7 @@ O Data Build Tool surgiu pela necessidade de tornar o processo de transformaçã
 
 Mesmo com o íntuito do estudo ser voltado para o DBT, maior parte do tempo foi investido para a criação da infraestrutura para preparar a integração do DBT na arquitetura e a orquestração dos scripts .sql também referênciados como modelos.
 
-Esse é apenas o início de uma jornada de estudo orientado à projetos. Bem vindo ao meu primeiro projeto no github! \\
+Esse é apenas o início de uma jornada de estudo orientado à projetos. Bem vindo ao meu primeiro projeto no github!
 ![image](https://github.com/user-attachments/assets/c47e439c-68db-44f3-9828-60e08eecea88)
 
 
@@ -83,4 +83,8 @@ CREATE ROLE novo_usuario WITH LOGIN PASSWORD 'Senha';
 ALTER ROLE novo_usuario SUPERUSER;
 ALTER ROLE postgres NOLOGIN;
 ```
+#### Realizando backup do banco de dados AdventureWorks
+
+Usaremos o seguinte arquivo de backup https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2022.bak
+
 
