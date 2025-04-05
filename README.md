@@ -104,8 +104,9 @@ Por que a alteração de IDE de BDMS? O Azure Data Studio ou SQL Server Managema
 \
 https://dbeaver.io/download/
 \
-1.Monte a conexão
-![Captura de Tela 2025-04-05 às 16 04 30](https://github.com/user-attachments/assets/339bc6b9-563f-4d7d-9120-5e15a03ab781)
+1.Monte a conexão: \
+![Captura de Tela 2025-04-05 às 16 24 57](https://github.com/user-attachments/assets/cb939e56-8358-41c6-992e-31b32fcf266f)
+
 \
 2.Em seguida, crie um script sql com os comandos abaixo:
 ```sql
