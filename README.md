@@ -102,7 +102,7 @@ Com o container do MSSQL ativo, seguiremos alguns passos: \
 
 Por que a alteração de IDE de BDMS? O Azure Data Studio ou SQL Server Managemant Studio(SSMS) permite a restauração de banco de dados via arquivo .bak, mas para manuseio e manipulações de bancos de dados, o DBeaver é bem interessante e fácil. Recomendo que aproveite para criar a conexão com o MSSQL lá também. Segue o link de download:
 \
-https://dbeaver.io/download/
+https://dbeaver.io/download/ \
 \
 1.Monte a conexão: \
 ![Captura de Tela 2025-04-05 às 16 24 57](https://github.com/user-attachments/assets/cb939e56-8358-41c6-992e-31b32fcf266f)
