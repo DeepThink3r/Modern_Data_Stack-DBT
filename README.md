@@ -83,8 +83,8 @@ CREATE ROLE novo_usuario WITH LOGIN PASSWORD 'Senha';
 ALTER ROLE novo_usuario SUPERUSER;
 ALTER ROLE postgres NOLOGIN;
 ```
-\\
-
+\
+\
 #### Realizando backup do banco de dados AdventureWorks
 
 Usaremos o seguinte arquivo de backup https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2022.bak
