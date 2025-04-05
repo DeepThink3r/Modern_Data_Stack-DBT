@@ -82,10 +82,45 @@ Acesse o terminal do container do postgresql com o comando `psql -U postgres -d 
 CREATE ROLE novo_usuario WITH LOGIN PASSWORD 'Senha';
 ALTER ROLE novo_usuario SUPERUSER;
 ALTER ROLE postgres NOLOGIN;
+CREATE DATABASE AdventureWorks;
 ```
-\
+
 #### Realizando backup do banco de dados AdventureWorks
 
-Usaremos o seguinte arquivo de backup https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2022.bak
+Usaremos o seguinte arquivo de backup: https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2022.bak
+\
+Com o container do MSSQL ativo, seguiremos alguns passos:
+\
+1.Configure a sua conexão no Azure Data Studio:
+![image](https://github.com/user-attachments/assets/88ce7c06-4e19-4ab0-bd65-c62f79bfb407)
+\
+2.Importe o arquivo de banco de dados
+⭐ Mas antes, você precisará copiar o arquivo .bak para um diretório do seu container. Execute o comando ``docker cp /Users/gabrielbraga/AdventureWorks2022.bak container-id:/var/lib/mssql``
+![Captura de Tela 2025-04-05 às 16 04 30](https://github.com/user-attachments/assets/8bd41df1-2b1f-410e-ad1d-03351753fa4c)
+
+### Criando conexão no DBeaver com o postgres
+
+Por que a alteração de IDE de BDMS? O Azure Data Studio ou SQL Server Managemant Studio(SSMS) permite a restauração de banco de dados via arquivo .bak, mas para manuseio e manipulações de bancos de dados, o DBeaver é bem interessante e fácil. Recomendo que aproveite para criar a conexão com o MSSQL lá também. Segue o link de download:
+\
+https://dbeaver.io/download/
+\
+1.Monte a conexão
+![Captura de Tela 2025-04-05 às 16 04 30](https://github.com/user-attachments/assets/339bc6b9-563f-4d7d-9120-5e15a03ab781)
+\
+2.Em seguida, crie um script sql com os comandos abaixo:
+```sql
+CREATE SCHEMA airbyte;
+CREATE USER airbyte_user PASSWORD 'airbyte';
+
+GRANT CONNECT ON DATABASE adventureworks TO airbyte_user;
+GRANT USAGE ON SCHEMA airbyte TO airbyte_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA airbyte TO airbyte_user;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA airbyte TO airbyte_user;
+```
+Como no próximo passo configuraremos o airbyte para extrair os dados do MSSQL e mandar para o Postgres, a documentação recomenda como prática, que o usuário crie schema e user específico para essa conexão e com direitos específicos.
+
+
+
+
 
 
