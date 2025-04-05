@@ -91,7 +91,7 @@ Usaremos o seguinte arquivo de backup: https://github.com/Microsoft/sql-server-s
 \
 Com o container do MSSQL ativo, seguiremos alguns passos:
 \
-1.Configure a sua conexão no Azure Data Studio:
+1.Configure a sua conexão no Azure Data Studio: \
 ![image](https://github.com/user-attachments/assets/88ce7c06-4e19-4ab0-bd65-c62f79bfb407)
 \
 2.Importe o arquivo de banco de dados
