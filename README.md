@@ -119,11 +119,20 @@ GRANT USAGE ON SCHEMA airbyte TO airbyte_user;
 GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA airbyte TO airbyte_user;
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA airbyte TO airbyte_user;
 ```
-Como no próximo passo configuraremos o airbyte para extrair os dados do MSSQL e mandar para o Postgres, a documentação recomenda como prática, que o usuário crie schema e user específico para essa conexão e com direitos específicos. \
+Como no próximo passo configuraremos o airbyte para extrair os dados do MSSQL e mandar para o Postgres, a documentação recomenda como prática, que o usuário crie schema e user específico para essa conexão e com direitos específicos.
 
 ## Airbyte
 
+A orientação de instalação do airbyte é encontrada nesse link de documentações: https://docs.airbyte.com/using-airbyte/getting-started/oss-quickstart \
+\
+### Configurando uma conexão
 
+Depois de baixar e logar no Airbyte. Siga os passos: \
+\
+1. Clique em _new connection_ no canto superior direito;
+2. Selecione _Set up a new source_;
+3. Procure por Microsoft SQL Server;
+4. Preencha os campos de conexão.
 
 
 
