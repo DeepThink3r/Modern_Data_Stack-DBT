@@ -120,7 +120,7 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA airbyte TO airbyte_
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA airbyte TO airbyte_user;
 ```
 Como no próximo passo configuraremos o airbyte para extrair os dados do MSSQL e mandar para o Postgres, a documentação recomenda como prática, que o usuário crie schema e user específico para essa conexão e com direitos específicos. \
-\
+
 ## Airbyte
 
 
