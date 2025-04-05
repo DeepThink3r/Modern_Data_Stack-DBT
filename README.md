@@ -89,7 +89,7 @@ CREATE DATABASE AdventureWorks;
 
 Usaremos o seguinte arquivo de backup: https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2022.bak
 \
-Com o container do MSSQL ativo, seguiremos alguns passos:
+Com o container do MSSQL ativo, seguiremos alguns passos: \
 \
 1.Configure a sua conexão no Azure Data Studio: \
 ![image](https://github.com/user-attachments/assets/88ce7c06-4e19-4ab0-bd65-c62f79bfb407)
