@@ -131,7 +131,7 @@ Depois de baixar e logar no Airbyte. Siga os passos:
 2. Selecione _Set up a new source_;
 3. Procure por Microsoft SQL Server;
 4. Preencha os campos de conexão;
-5. Deixar o schema vazio ou especificar um schema em campos opcionais;
+5. Deixar o schema vazio ou especificar um schema em campos opcionais; \
 ⭐ Em host, insira `host.docker.internal`.
 
 ![image](https://github.com/user-attachments/assets/0eb30e53-ff96-48f8-96c7-0ca281b19c4a)
