@@ -7,7 +7,6 @@
   * [Subindo os Banco de Dados](#subindo-os-bancos-de-dados)
   * [Docker Network](#docker-network)
   * [Airbyte](#airbyte)
-  * [Schemas](#Schemas)
   * [Modelos](#Modelos)
   * [Orquestração](#orquestração)
 * [Conclusão](#conclusão)
@@ -134,11 +133,12 @@ Depois de baixar e logar no Airbyte. Siga os passos:
 3. Procure por Microsoft SQL Server;
 4. Preencha os campos de conexão;
 5. Deixar o schema vazio ou especificar um schema em campos opcionais;
-⭐ Em host, insira `host.docker.internal`. \
+⭐ Em host, insira `host.docker.internal`.
 
 ![image](https://github.com/user-attachments/assets/0eb30e53-ff96-48f8-96c7-0ca281b19c4a)
-
-
+\
+Na configuração do banco de destino, segue a mesma dinâmica. A porta é sempre a do host.
+A partir daqui, as configurações são bem intuitivas.
 
 
 
