@@ -164,6 +164,13 @@ Criou seus modelos? Vamos para a próxima etapa!
 \
 ## Orquestração
 
+Iremos usar o Airflow para orquestrar os nossos modelos, mas iremos usar o Airflow Astronomer Cosmos que é específicamente voltado para o DBT. Com os modelos concluídos, siga o passo de instalação do Astronomer CLI: https://www.astronomer.io/docs/astro/cli/install-cli/. \
+\
+Inclua todo o seu diretório do projeto DBT dentro da pasta dags após dar um `astro dev init` no terminal. Após configurar nos mesmos padrões do projeto desse repositório, dê um `astro dev start` no seu terminal. Assim todos os containers do airflow irão subir no seu docker.
+\
+Para que o airflow consiga se comunicar com o postgres, inclua apenas o web-server na mesma rede que eles executando o comando `docker network connect <nome da rede> <id do container`. E uma vez dentro do airflow, vá em 
+admin > connections > adicionar nova conexão. Garanta que o campo _Connection Id_ tenha o mesmo nome que o definido no arquivo profiles.py na pasta include. /
+![image](https://github.com/user-attachments/assets/c5a76429-f922-46b5-b81c-c75d9549cda3)
 
 
 
