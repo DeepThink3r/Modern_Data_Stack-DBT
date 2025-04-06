@@ -3,7 +3,7 @@
 * [Descrição do Projeto](#descrição-do-projeto)
 * [Tecnologias Utilizadas](#tecnologias-utilizadas)
 * [Configurando a Arquitetura](#configurando-a-arquitetura)
-* * [Docker](#docker)
+  * [Docker](#docker)
   * [Subindo os Banco de Dados](#subindo-os-bancos-de-dados)
   * [Airbyte](#airbyte)
   * [Modelos](#Modelos)
@@ -139,6 +139,8 @@ Depois de baixar e logar no Airbyte. Siga os passos:
 Na configuração do banco de destino, segue a mesma dinâmica. A porta é sempre a do host.
 A partir daqui, as configurações são bem intuitivas.
 
+## Modelos
 
+Copie o meu repositório e configure os arquivos, especialmente o profile que está em 
 
 
