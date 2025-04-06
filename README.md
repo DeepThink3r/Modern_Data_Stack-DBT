@@ -123,16 +123,21 @@ Como no próximo passo configuraremos o airbyte para extrair os dados do MSSQL e
 
 ## Airbyte
 
-A orientação de instalação do airbyte é encontrada nesse link de documentações: https://docs.airbyte.com/using-airbyte/getting-started/oss-quickstart \
+A orientação de instalação do airbyte é encontrada nesse link de documentações: https://docs.airbyte.com/using-airbyte/getting-started/oss-quickstart
 
 ### Configurando uma conexão
 
-Depois de baixar e logar no Airbyte. Siga os passos: \
+Depois de baixar e logar no Airbyte. Siga os passos: 
 
 1. Clique em _new connection_ no canto superior direito;
 2. Selecione _Set up a new source_;
 3. Procure por Microsoft SQL Server;
-4. Preencha os campos de conexão.
+4. Preencha os campos de conexão;
+5. Deixar o schema vazio ou especificar um schema em campos opcionais;
+⭐ Em host, insira `host.docker.internal`. \
+
+![image](https://github.com/user-attachments/assets/0eb30e53-ff96-48f8-96c7-0ca281b19c4a)
+
 
 
 
