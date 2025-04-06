@@ -143,19 +143,20 @@ A partir daqui, as configurações são bem intuitivas.
 ## Modelos
 
 Copie o meu repositório e configure os arquivos, especialmente o profile que está em dags/warehouse/profile. Caso for criar o seu modelo(e eu sei que vai), particulamente recomendo criar fora da dag do airflow(abordaremos isso logo a seguir). Portanto, dentro de uma pasta, crie um ambiente virtual do python e lá siga esses passos orientados pelo próprio DBT: \
-https://docs.getdbt.com/docs/core/pip-install /
-\
+https://docs.getdbt.com/docs/core/pip-install 
+
 Feito isso, digite `dbt init <nome do seu projeto>` no terminal e siga as etapas de configuração de projeto. Depois que terminar e a estrutura de pastas for feita, que vai ficar dessa maneira: \
 ![image](https://github.com/user-attachments/assets/e2090db1-bbc9-4066-9cf4-738cfecc6ce1)
 
 ⭐Repare que ao final da configuração do `dbt init`, ele irá retornar onde o seu arquivo profiles.yml está localizado na sua máquina local como segue abaixo: \
 `Profile apresentacao2 written to /Users/gabrielbraga/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.`
-\
+
 Esse mesmo arquivo, para facilitar o próximo passo de Orquestração, crie uma pasta no seu projeto chamada profile e mova-o para cá, logo você executará dentro do seu ambiente virtual o seguinte comando que visa criar uma variável de ambiente apontando para onde as informações do profiles.yml estão. Como eu estou em um MacOS, o comando é esse: /
 
 ```cmd
 export DBT_PROFILES_DIR="/Users/gabrielbraga/Library/CloudStorage/OneDrive-Pessoal/Documentos/Material de Estudo/DBT/projeto_dbt/warehouse/profile"
 ```
+\
 Como é uma boa prática do DBT, recomendo criar uma estrutura de pastas dentro de models e configurar o seu dbt-project.yml semelhante ao meu. Não se esqueça de dar uma olhada na pasta de macros pois criei uma macro que irá ajustar o nome do seus schemas de destino toda vez que for rodar um `dbt run --select <nome_do_modelo.sql>`.
 
 
