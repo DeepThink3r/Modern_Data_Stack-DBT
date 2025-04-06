@@ -124,11 +124,11 @@ Como no próximo passo configuraremos o airbyte para extrair os dados do MSSQL e
 ## Airbyte
 
 A orientação de instalação do airbyte é encontrada nesse link de documentações: https://docs.airbyte.com/using-airbyte/getting-started/oss-quickstart \
-\
+
 ### Configurando uma conexão
 
 Depois de baixar e logar no Airbyte. Siga os passos: \
-\
+
 1. Clique em _new connection_ no canto superior direito;
 2. Selecione _Set up a new source_;
 3. Procure por Microsoft SQL Server;
