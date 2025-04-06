@@ -151,13 +151,18 @@ Feito isso, digite `dbt init <nome do seu projeto>` no terminal e siga as etapas
 ⭐Repare que ao final da configuração do `dbt init`, ele irá retornar onde o seu arquivo profiles.yml está localizado na sua máquina local como segue abaixo: \
 `Profile apresentacao2 written to /Users/gabrielbraga/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.`
 
-Esse mesmo arquivo, para facilitar o próximo passo de Orquestração, crie uma pasta no seu projeto chamada profile e mova-o para cá, logo você executará dentro do seu ambiente virtual o seguinte comando que visa criar uma variável de ambiente apontando para onde as informações do profiles.yml estão. Como eu estou em um MacOS, o comando é esse: \
+Esse mesmo arquivo, para facilitar o próximo passo de Orquestração, crie uma pasta no seu projeto chamada profile e mova-o para cá, logo você executará dentro do seu ambiente virtual o seguinte comando que visa criar uma variável de ambiente apontando para onde as informações do profiles.yml estão. Como eu estou em um MacOS, o comando é esse:
 ```cmd
 export DBT_PROFILES_DIR="/Users/gabrielbraga/Library/CloudStorage/OneDrive-Pessoal/Documentos/Material de Estudo/DBT/projeto_dbt/warehouse/profile"
 ```
 \
 Como é uma boa prática do DBT, recomendo criar uma estrutura de pastas dentro de models e configurar o seu dbt-project.yml semelhante ao meu. Não se esqueça de dar uma olhada na pasta de macros pois criei uma macro que irá ajustar o nome do seus schemas de destino toda vez que for rodar um `dbt run --select <nome_do_modelo.sql>`.
-
+\
+https://docs.getdbt.com/best-practices/how-we-structure/1-guide-overview
+\
+Criou seus modelos? Vamos para a próxima etapa!
+\
+## Orquestração
 
 
 
