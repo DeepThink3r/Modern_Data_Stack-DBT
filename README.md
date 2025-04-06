@@ -173,5 +173,5 @@ admin > connections > adicionar nova conexão. Garanta que o campo _Connection I
 
 # Conclusão
 
-Foi um projeto um pouco desafiador, mas interessante e necessário. Tive que pesquisar mais a fundo sobre cada uma das ferramentas, especialmente o Docker para que os containers conseguissem se comunicar e o Airflow para orquestrar os modelos .sql no dbt-core. Com isso foi possível consolidar um conhecimento que, a princípio, seria apenas para o DBT, mas que decidi expandir para toda uma arquitetura e contexto para a ferramenta de estudo(DBT). /
+Foi um projeto um pouco desafiador, mas interessante e necessário. Tive que pesquisar mais a fundo sobre cada uma das ferramentas, especialmente o Docker para que os containers conseguissem se comunicar e o Airflow para orquestrar os modelos .sql no dbt-core. Com isso foi possível consolidar um conhecimento que, a princípio, seria apenas para o DBT, mas que decidi expandir para toda uma arquitetura e contexto para a ferramenta de estudo(DBT). \
 Deixei o documento o mais detalhado possível para que você possa replicar e melhorar esse projeto!
