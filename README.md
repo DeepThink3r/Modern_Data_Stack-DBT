@@ -1,4 +1,4 @@
-# Utilizando DBT como o T do ETL
+# Utilizando o DBT dentro de uma Modern Data Stack
 
 * [Descrição do Projeto](#descrição-do-projeto)
 * [Tecnologias Utilizadas](#tecnologias-utilizadas)
@@ -19,8 +19,6 @@ O Data Build Tool surgiu pela necessidade de tornar o processo de transformaçã
 Mesmo com o íntuito do estudo ser voltado para o DBT, maior parte do tempo foi investido para a criação da infraestrutura para preparar a integração do DBT na arquitetura e a orquestração dos scripts .sql também referênciados como modelos.
 
 Esse é apenas o início de uma jornada de estudo orientado à projetos. Bem vindo ao meu primeiro projeto no github!
-\
-
 ![image](https://github.com/user-attachments/assets/c47e439c-68db-44f3-9828-60e08eecea88)
 
 
@@ -170,7 +168,6 @@ Inclua todo o seu diretório do projeto DBT dentro da pasta dags após dar um `a
 \
 Para que o airflow consiga se comunicar com o postgres, inclua apenas o web-server na mesma rede que eles executando o comando `docker network connect <nome da rede> <id do container`. E uma vez dentro do airflow, vá em 
 admin > connections > adicionar nova conexão. Garanta que o campo _Connection Id_ tenha o mesmo nome que o definido no arquivo profiles.py na pasta include.
-\
 ![image](https://github.com/user-attachments/assets/c5a76429-f922-46b5-b81c-c75d9549cda3)
 
 
