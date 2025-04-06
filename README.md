@@ -152,6 +152,7 @@ Feito isso, digite `dbt init <nome do seu projeto>` no terminal e siga as etapas
 `Profile apresentacao2 written to /Users/gabrielbraga/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.`
 
 Esse mesmo arquivo, para facilitar o próximo passo de Orquestração, crie uma pasta no seu projeto chamada profile e mova-o para cá, logo você executará dentro do seu ambiente virtual o seguinte comando que visa criar uma variável de ambiente apontando para onde as informações do profiles.yml estão. Como eu estou em um MacOS, o comando é esse: \
+
 \
 ```cmd
 export DBT_PROFILES_DIR="/Users/gabrielbraga/Library/CloudStorage/OneDrive-Pessoal/Documentos/Material de Estudo/DBT/projeto_dbt/warehouse/profile"
